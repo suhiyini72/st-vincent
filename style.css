@@ -1,0 +1,180 @@
+@import url("style2.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px 100px 0 100px;
+  border-width: thick;
+  border-style: none;
+}
+
+.header {
+  background-color: #FFF4F4;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 20px;
+  text-align: left;
+  height: 100px;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-left-width: medium;
+  border-right-width: medium;
+  border-color: red;
+}
+
+.header img {
+  float: left;
+  width: auto;
+  height: 70px;
+  margin-right: 15px;
+}
+
+.header h3 {
+    word-spacing: 2px;
+}
+
+/* Style the top navigation bar */
+.topnav1 {
+  overflow: hidden;
+  background-color: #9933cc;
+  /*rgba(60, 200, 60, 1.0);*/
+  padding: 0 0 20px 0;
+  height: 30px;
+  border-style: solid;
+  border-width: medium;
+  border-color: red;
+}
+
+.topnav2 {
+  overflow: hidden;
+  background-color: #9933cc;
+  /*rgba(60, 200, 60, 1.0);*/
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: auto;
+  height: 35px;
+  border-style: solid;
+  border-width: medium;
+  border-color: red;
+}
+
+/* Style the topnav links */
+.topnav1 a {
+  float: right;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: justify;
+  margin: 0 0 0 0;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+.topnav2 a {
+  float: right;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: justify;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*.......................Image Gallery Begins here...........................*/
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  margin-top: auto;
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*.......................Image Gallery Ends here.............................*/
+
+.sv-margin {
+    /*footer bottom space in pixels */
+    margin-bottom: 40px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+.sv-footer {
+  background-color: rgba(60, 200, 60, 1.0);
+  height: 200px;
+  border: solid red;
+  margin-bottom: 15px;
+  padding-bottom: 0;
+  padding-top: 4px;
+  text-align: center;
+  text-decoration: none;
+}
